@@ -1,0 +1,16 @@
+.flex{
+    display: flex;
+}
+.aligncenter{
+    align-items: center;
+}
+.contentcenter{
+    justify-content: center;
+}
+.bgred{
+    border: 2px solid red;
+}
+.hvr :hover{
+    color: white;
+    cursor: pointer;
+}

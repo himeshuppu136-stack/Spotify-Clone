@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-labelledby="titleDesc">
+  <title id="titleDesc">Play</title>
+  <!-- Green circle -->
+  <circle cx="32" cy="32" r="30" fill="#1DB954"/>
+  <!-- Black play triangle -->
+  <polygon points="26,20 26,44 46,32" fill="#000000"/>
+</svg>

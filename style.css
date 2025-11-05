@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
+:root{
+    --a:0;
+    --x:#121212;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Sawarabi Gothic", sans-serif;
+    font-style: normal;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.home_logo_search{
+    gap: 25px;
+}
+.home_search{
+    gap: 10px;
+}
+.home{
+    padding: 10px;
+    background-color: #1f1f1f;
+}
+.logo{
+    filter: invert(1);
+}
+.home img{
+    width: 25px;
+    filter: invert(1);
+}
+.searchbar{
+    width: 400px;
+    padding-left: 8px;
+    background-color: #1f1f1f;
+    color: whitesmoke;
+    font-size: 15px;
+}
+.small_search{
+    background-color: #1f1f1f;
+    border-radius: 30px;
+    padding: 10px;
+    display: none;
+}
+.small_search img {
+    width: 20px;
+    filter: invert(1);
+    
+}
+.menu{
+    filter: invert(1);
+    display: none;
+}
+.searchbar img{
+    width: 25px;
+    color: whitesmoke;
+    filter: invert(1);
+}
+.header{
+    width: 96vw;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.header button{
+    border-radius: 20px;
+}
+.header img{
+    width: 40px;
+}
+.header ul{
+    display: flex;
+    gap: 8px;
+}
+.header ul li{
+    list-style: none;
+}
+.login_others{
+    gap: 20px;
+    font-weight:bolder;
+    font-size: 15px;
+}
+.install{
+    font-size: 13px;
+}
+.divider-solid {
+  width: 4px;         /* thickness control */
+  height: 32px;       /* length control */
+  display: inline-block;
+  vertical-align: middle;
+  color: #ccc;        /* stroke color (uses currentColor) */
+}
+.other{
+    color: #adadad;
+}
+.login_signup_install{
+    gap: 10px;
+}
+.install img{
+    width: 18px;
+    filter: invert(1);
+}
+.install{
+    gap: 3px;
+    color: #adadad;
+}
+.signup{
+    color: #adadad;
+}
+.login button{
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 1000;
+}
+.left{
+    margin: 5px;
+    width: 25vw;
+    background-color: #121212;
+    border-radius: 10px;
+    height: 84vh;
+    padding: 15px 20px;
+
+}
+.right{
+    margin: 5px;
+    width: 75vw;
+    background-color: #121212;
+    border-radius: 10px;
+    height: 84vh;
+    padding: 30px 30px;
+    overflow-y: scroll;
+}
+.library{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.container{
+    height: 60%;
+    overflow-y: auto;
+}
+.box{
+    height: 50%;
+    margin-bottom: 20px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+}
+.info{
+    font-size: 12px;
+    color:#adadad;
+}
+.info ul{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-top: 25px;
+}
+.info ul li{
+    list-style: none;
+    padding: 5px;
+    cursor: pointer;
+}
+.info ul li:hover{
+    text-decoration: underline;
+}
+.cookie{
+    font-size: 13px;
+    padding-top: 10px;
+    padding-left: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.cookie:hover{
+    text-decoration: underline;
+}
+.language{
+    padding-top: 25px;
+}
+.language button {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 5px 25px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.container ul li{
+    padding-right: 8px ;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: black;
+    padding-left: 10px;
+    margin: 5px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+ .container ul li .music{
+    width: 15%;
+ }
+ .container ul li .songinfo{
+    width: 55%;
+ }
+ .container ul li .play{
+    width: 30%;
+ }
+ .container ul li .play{
+    padding-left: 10px;
+    align-items: center;
+    font-size: 12px;
+    gap: 3px;
+}
+.right .playbar{
+    background-color: #435143;
+    height: 40px;
+    width: 75vw;
+    position:fixed;
+    right: -37px;
+    bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.right .playbar .contents{
+    gap: 100px;
+}
+.controls{
+    filter: invert(1);
+}
+.seekbar{
+    border: 3px solid white;
+    width: 80%;
+    height: 0px;
+    margin: 5px;
+    cursor: pointer;
+}
+.circle{
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 7.5px;
+    position: relative;
+    bottom: 8px;
+    right: 6px;
+}
+.playlists{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: auto;
+    height: 50vh;
+    margin-top: 30px;
+    overflow-y: auto;
+}
+.artists{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: auto;
+    height: 50vh;
+    margin-top: 30px;
+    overflow-y: auto;
+}
+.card{
+    /* border: 2px solid red; */
+    position: relative;
+    width: 180px;
+    height: 260px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+    word-break:normal;
+    font-size: 10px;
+    background-color: var(--x);
+}
+.playgreen{
+    width: 45px;
+    position: absolute;
+    bottom: 43px;
+    left: 125px;
+    opacity: var(--a);
+    transition: all ease-in-out 0.5s;
+}
+.card:hover{
+    --a:1;
+    --x: #2b2b2b;
+}
+.card img{
+    height: 65%;
+}
+.artists .card img{
+    border-radius: 100px;
+}
+@media (max-width: 1000px) {
+    .home_logo_search{
+        padding-right: 10px;
+    }
+    .header{
+        padding: 10px 8px;
+    }
+    .searchbar{
+        display: none !important;
+    }
+    .small_search{
+        display: block;
+    }
+    .other{
+        display: none ;
+    }
+    .divider-solid{
+        display: none;
+    }
+    .header .home {
+        display: none;
+    }
+    .home_logo_search{
+        gap: 25px;
+    }
+    .left{
+        margin-left: 0px;
+        width: 90vw;
+        height: 93vh;
+        position: absolute;
+        left: -110%;
+        z-index: 3;
+        transition: all 1s;
+        background-color: #0a0a0a;
+    }
+    .right{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .playlists{
+        justify-content: center;
+    }
+    .contents{
+        flex-direction: column;
+        gap: 10px !important;
+        align-items: center;
+    }
+    .playbar{
+        height: auto !important;
+        width: 100vw !important;
+        right: 0px !important;
+    }
+    .card{
+        width: 250px;
+        height: 340px;
+    }
+    .menu{
+        display: block;
+        position: relative;
+        top: 12px;
+    }
+    .install{
+        display: none !important;
+    }
+    .signup{
+        display: none;
+    }
+}
