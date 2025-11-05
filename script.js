@@ -45,7 +45,7 @@ async function Playmusic(track, pause = false) {
     let a = document.querySelector(".songname");
     a.innerHTML = `${track}`;
     if (!(pause)) {
-        play.src = "pause.svg"
+        play.src = "/images/pause.svg"
         cursong.play();
     }
 }
@@ -124,11 +124,11 @@ async function main() {
     play.addEventListener("click", e => {
         if (cursong.paused) {
             cursong.play();
-            play.src = "pause.svg";
+            play.src = "/images/pause.svg";
         }
         else {
             cursong.pause();
-            play.src = "play.svg";
+            play.src = "/images/play.svg";
         }
     })
     let search = Array.from(document.querySelectorAll(".search"));
@@ -159,7 +159,7 @@ async function main() {
         document.querySelector(".duration").innerHTML = `${await secondstominutes(cursong.currentTime)}/${await secondstominutes(cursong.duration)}`;
         document.querySelector(".circle").style.left = cursong.currentTime / cursong.duration * 100 + "%";
         if (cursong.currentTime === cursong.duration) {
-            play.src = "replay.svg";
+            play.src = "/images/replay.svg";
         }
     })
     document.querySelector(".seekbar").addEventListener("click", e => {
